@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-size: contain;
+    background-position: center;
+    padding: 10px 8%;
+
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    transform: rotate(345deg);
+}
+nav button{
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    padding:7px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor:pointer;
+    
+}
+.fa-plus{
+    position: relative;
+    left: 80%;
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.fa-globe{
+    color: #fff;
+    width: 10px;
+    margin-right: 10px;
+}
+.lang-btn img{
+    width: 15px;
+    margin-left: 10px;
+}
+.header-content{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    
+}
+.header-content h1{
+    color: white;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+}
+.header-content h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+.from{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    
+}
+input[type="email"]{
+    width: 400px;
+    padding: 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border:  1px solid white;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+#btn{
+    margin-left: 10px;
+    padding: 20px 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+.main-content{
+    height: 100%;
+    width: 100%;
+    margin-left: 70px;
+    margin-right: 70px
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.col1 h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq small {
+    font-size: 13px;
+}
+
+.faq .email-signup {
+    
+    margin-left: 275px;
+    display: flex;
+}
+
+
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    
+   
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+   
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0px;
+  
+}
+
+.footer .lang-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   ;
+}
+
+.col a{
+    
+    transition: 2s ease-in 0.2s;
+}
+.col a:hover{
+    color: #ffffff;
+    color: yellow;
+}
